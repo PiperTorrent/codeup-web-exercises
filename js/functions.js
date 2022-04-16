@@ -14,6 +14,7 @@ function sayHello(name) {
     return "Hello " + name;
 }
 
+console.log(sayHello("Piper"));
 
 /**
  * TODO:
@@ -33,9 +34,9 @@ console.log()
  * console.
  */
 
-let myName = ("Piper")
+let myName = "Piper";
+console.log(sayHello(myName));
 
-sayHello, "Piper!");
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -65,7 +66,9 @@ function isTwo(num){
 console.log(isTwo(1))
 console.log(isTwo(2))
 console.log(isTwo(3))
-console.log("The random number is: " + random, isTwo(random))
+console.log("The random number is: " + random, isTwo(random));
+
+
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
