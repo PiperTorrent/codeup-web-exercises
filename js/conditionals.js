@@ -22,34 +22,47 @@
  * console.logging the function's return value
  */
 
-function analyzeColor(color) {
-    return "The night sky is " + color;
+ function analyzeColor(color) {
 
-    if (analyzeColor("blue"))
-        return "The Day sky is " + color;
+     if (color === "black") {
+         return "The sky is black"
+     } else if (color === "white")
+        return "The stars are white"
+ }
+console.log(analyzeColor("black"));
+console.log(analyzeColor("white"));
 
-    console.log(analyzeColor("black"))
-    console.log(analyzeColor("blue"))
-}
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
+ // function color(randomColor) {
+//
+//     if (randomColor === true)
+//         return ''
+// }
+// console.log(randomColor)
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
+switch (randomColor){
+    case "str" :
+        break;
+}
+console.log(randomColor)
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -57,6 +70,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
+let faveColor = prompt("Whats your fav Color").toLowerCase().trim()
+console.log(faveColor)
 /* ########################################################################## */
 
 /**
@@ -79,6 +94,32 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+function calculateTotal(luckyNum, total) {
+    switch (luckyNum) {
+        case 1:
+            return total * .9;
+        case 2:
+            return total * .75;
+        case 3:
+            return total * .65;
+        case 4:
+            return total / 2;
+        case 5:
+            return 0;
+        default:
+            return total;
+    }
+}
+
+    console.log(calculateTotal(0,100));
+    console.log(calculateTotal(1,100));
+    console.log(calculateTotal(2,100));
+    console.log(calculateTotal(3,100));
+    console.log(calculateTotal(4,100));
+    console.log(calculateTotal(5,100));
+
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -89,6 +130,14 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
+
+    let luckyNumber = Math.floor(Math.random() * 6);
+    let total = parseFloat(prompt("What was your bill total?"));
+    alert("Your lucky number was: " + luckyNumber + "\nYour total before discount was: $" + total.toFixed(2) + "\nYour final total is: $" + calculateTotal(luckyNumber, total).toFixed(2));
+
+
+
 
 /**
  * TODO:
@@ -109,5 +158,49 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * HINT: The way we prompt for a value could be improved
  */
 
+
+
+function playWithMe() {
+    if(confirm("Wanna play a game?")) {
+        numberGame();
+    } else {
+        alert("Boo... No fun...");
+    }
+}
+
+    function numberGame() {
+        let userVal = parseFloat(prompt("Give me a number!"));
+        if (isNaN(userVal)) {
+            alert("That's not a number...");
+        } else {
+            alert("Hey, did you know that " + userVal + " is a(n) " + evenOrOdd(userVal) + " number?");
+            alert("Hey, did you know that " + userVal + " plus 100 is " + plus100(userVal) + "?");
+            alert("Hey, did you know that " + userVal + " is a " + positiveOrNegative(userVal) + " number?");
+        }
+    }
+
+    function plus100(num) {
+        return num + 100;
+    }
+
+    function evenOrOdd(num) {
+        if (num === 0) {
+            return "zero";
+        } else if (num % 2 === 0) {
+            return "even";
+        } else {
+            return "odd";
+        }
+    }
+
+    function positiveOrNegative(num) {
+        if (num === 0) {
+            return "zero";
+        } else if (num > 0) {
+            return "positive";
+        } else {
+            return "negative";
+        }
+    }
 
 }())
