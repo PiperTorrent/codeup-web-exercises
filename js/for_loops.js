@@ -19,8 +19,10 @@ for (let x = 10; x < 20; x++) {
 }
 
 //4
-for (let x = 1; x < 10; x++) {
-    let str = toString().repeat()
+// for (let x = 1; x < 10; x++) {
+//     let str = '' toString().repeat(x - );
+//
+//     console.log(str)
+// }
 
-    console.log(str)
-}
+
