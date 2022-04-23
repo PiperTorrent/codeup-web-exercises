@@ -14,7 +14,7 @@
      * array.
      */
 
-console.log(names.length)
+console.log(names.length);
 
     /**
      * TODO:
@@ -22,7 +22,10 @@ console.log(names.length)
      * accessing each element's index.
      */
 
-console.log(names)
+console.log(names[0]);
+console.log(names[1]);
+console.log(names[2]);
+console.log(names[3]);
 
 
 
@@ -41,11 +44,14 @@ console.log(names)
      * Refactor your above code to use a `forEach` loop or 'forOf"
      */
 
-   names.forEach(function (names, index,array){
-       if (index % 2 === 0){
-       console.log(names + index + array);
-       }
+   names.forEach(function (names){
+       console.log(names);
+
    })
+
+    for (let name of names){
+        console.log(name)
+    }
 
     /**
      * TODO:
@@ -61,8 +67,22 @@ console.log(names)
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
- function first{
 
+    function first(ar) {
+        return ar [0];
     }
-    
+console.log(first(names))
+
+    function second(ar) {
+        return ar [1];
+    }
+console.log(second(names))
+
+    function last(ar) {
+        return ar [ar.length - 1]
+    }
+    console.log(last(names))
+
+
+
 })();
