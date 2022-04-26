@@ -28,6 +28,7 @@ let person = {
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 person.sayHello = function (){
+    return "Hello " + person
 }
 console.log(person.sayHello)
 
