@@ -1,4 +1,9 @@
-h1 {
+.fancy-header {
+    color: blue;
+    text-decoration: underline;
+}
+
+h2 {
     color: blue;
     text-decoration: underline;
 }
