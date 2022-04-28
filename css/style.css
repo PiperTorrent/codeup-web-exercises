@@ -1,9 +1,45 @@
+
+
+
+body { background-color: #F00;
+       background-image:
+       url(../img/hazelwood.jpg);
+    font-family: 'Tapestry', cursive;
+}
+
+p {
+    color: yellow;
+}
+
 .fancy-header {
-    color: blue;
+    color: green;
     text-decoration: underline;
 }
 
 h2 {
-    color: blue;
+    color: deeppink;
     text-decoration: underline;
+}
+.fancy-header { text-align: center; }
+
+ol{
+    color: chartreuse;
+    list-style: square;
+}
+
+ul {
+    color: yellow;
+    list-style: georgian;
+}
+
+tr{
+    color: yellow;
+    padding: 50px;
+}
+td {
+    color: chartreuse;
+}
+
+a {
+    color: aquamarine;
 }
