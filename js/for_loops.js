@@ -9,8 +9,8 @@
 //     }
 //
 //     (showMultiplicationTable(7))
-//
-//
+
+
 // //3
 //     for (let x = 10; x < 20; x++) {
 //         let random = Math.floor(Math.random() * 180) + 20;
