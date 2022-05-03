@@ -7,9 +7,40 @@ body, html {
 }
 
 
-.message {
+.message-info {
     color: white;
     background-color: black;
+    padding:5px ;
+    border:5px;
+    margin: 10px;
+    width: 1000px;
+    height: 50px;
+    display: inline-block;
+}
+.message-success {
+    color: blue;
+    background-color: yellow;
+    padding:5px ;
+    border:5px;
+    margin: 10px;
+    width: 1000px;
+    height: 50px;
+    display: inline-block;
+}
+
+.message-warning {
+    color: orangered;
+    background-color: yellow;
+    padding:5px ;
+    border:5px;
+    margin: 10px;
+    width: 1000px;
+    height: 50px;
+    display: inline-block;
+}
+.message-error {
+    color: black;
+    background-color: red;
     padding:5px ;
     border:5px;
     margin: 10px;
