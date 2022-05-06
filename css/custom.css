@@ -1,0 +1,37 @@
+
+/*moved search box left*/
+.d-flex{
+    margin-right: 50%;
+}
+/*color for button*/
+.btn {
+    margin: auto;
+    color: blue;
+    width: 100% }
+
+
+/*person icon*/
+.person{
+    padding-right: 1em;
+}
+
+
+/*jumbotron*/
+.jumbotron{
+    background-image: url("../img/pizza.png");
+    height: 346px;
+    background-size: cover;
+}
+
+.bg-success{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: auto;
+
+
+}
+
+
