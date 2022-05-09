@@ -46,15 +46,61 @@ fizzBuzz();
 //Warm up
 //write a function that takes in an array of strings and returns a string of the first letter of each element concatenated together
 
-function allFirstLetter(arr) {
-    let bucket = "";
-    for (let el of arr);{
-        bucket += el [0];
+// function allFirstLetter(arr) {
+//     let bucket = "";
+//     for (let el of arr);{
+//         bucket += el [0];
+//     }
+//     return bucket;
+// }
+// const testArrStrings =["dog","cat","frog","bat"];
+// console.log(allFirstLetter(testArrStrings))
+
+
+
+
+const hamsters = [
+    {
+        name: "Hamtaro",
+        heightInMM: 86,
+        fur: ['orange', 'white'],
+        gender: "male",
+        dateOfBirth: "August 6"
+    } , {
+        name: "Bijou",
+        heightInMM: 75,
+        fur: ['white'],
+        gender: "female",
+        dateOfBirth: "July 10"
+    } , {
+        name: "Oxnard",
+        heightInMM: 100,
+        fur: ['grey', 'white'],
+        gender: "male",
+        dateOfBirth: "May 3"
+    } , {
+        name: "Boss",
+        heightInMM: 120,
+        fur: ['brown', 'white'],
+        gender: "male",
+        dateOfBirth: "September 21"
+    } , {
+        name: "Snoozer",
+        heightInMM: 85,
+        fur: ['brown', 'white', "pink"],
+        gender: "male",
+        dateOfBirth: "January 14"
     }
-    return bucket;
+];
+
+function tallHam(arr) {
+    let tallest = {heightInMM: 0};
+    for (let hamster of arr) {
+        if (hamster.heightInMM > tallest.heightInMM) {
+            tallest = hamster;
+
+        }
+    }
+    return tallest;
 }
-const testArrStrings =["dog","cat","frog","bat"];
-console.log(allFirstLetter(testArrStrings))
-
-
-
+console.log(tallHam(hamsters));
