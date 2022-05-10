@@ -92,15 +92,27 @@ const hamsters = [
         dateOfBirth: "January 14"
     }
 ];
-
+//tallest hamster
 function tallHam(arr) {
     let tallest = {heightInMM: 0};
     for (let hamster of arr) {
         if (hamster.heightInMM > tallest.heightInMM) {
             tallest = hamster;
-
         }
     }
     return tallest;
 }
 console.log(tallHam(hamsters));
+
+//fur color
+function furColor(arr){
+    let col= {fur:[]};
+    for (let hamster of arr){
+        if (hamster.fur.length > col.fur.length );{
+            col = hamster
+        }
+    }
+    return col;
+}
+
+console.log(furColor(hamsters))
