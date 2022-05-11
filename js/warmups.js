@@ -116,3 +116,22 @@ function furColor(arr){
 }
 
 console.log(furColor(hamsters))
+
+//Write a function that will accept a string. It should return an object with the following properties: string, size, containsLetterFromRSTLNE, and isOneWord.
+function makeObj(str){
+    const obj ={};
+    obj.string = str;
+    obj.size = str.length;
+    obj.isOneWord =str.indexOf(" ") < 0;
+    let lc = str.toLowerCase();
+    if (lc.includes("r") || lc.includes("s") || lc.includes("t") || lc.includes("l") || lc.includes("n") || lc.includes("e")) {
+        obj.containsLetterFromRSTLNE = true;
+    } else {
+        obj.containsLetterFromRSTLNE = false;
+    }
+    return obj;
+}
+
+console.log(makeObjectFromString('tacocat'));
+console.log(makeObjectFromString('John Jacob'));
+console.log(makeObjectFromString('Kacy Bobby'));
