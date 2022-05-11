@@ -28,20 +28,6 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
-
-
-
-   // let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-
-    // <ul>
-    //     <li>Mercury</li>
-    //     <li>Venus</li>
-    //     <li>Earth</li>
-    //     <li>Mars</li>
-    //     <li>Jupiter</li>
-    //     <li>Saturn</li>
-    //     <li>Uranus</li>
-    //     <li>Neptune</li>
-    // </ul>
+    let planetsUl = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>"
 
 })();
