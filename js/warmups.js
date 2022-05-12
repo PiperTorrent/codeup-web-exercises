@@ -131,7 +131,26 @@ function makeObj(str){
     }
     return obj;
 }
+//
+// console.log(makeObjectFromString('tacocat'));
+// console.log(makeObjectFromString('John Jacob'));
+// console.log(makeObjectFromString('Kacy Bobby'));
 
-console.log(makeObjectFromString('tacocat'));
-console.log(makeObjectFromString('John Jacob'));
-console.log(makeObjectFromString('Kacy Bobby'));
+var fruits = ["apple", "banana", "orange", "apple", "pineapple"];
+
+function allIndexOf(x,y) {}
+
+
+
+var bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
+
+function removeAll(x,y) {
+    let bucket = [];
+    for (let i = 0; i < x.length; i++){
+        if( x[i] !== y){
+            bucket.push(x[i]);
+        }
+    }
+return bucket;
+}
+console.log(removeAll(bugs,'roach'))
