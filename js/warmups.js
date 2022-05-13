@@ -139,10 +139,11 @@ function makeObj(str){
 var fruits = ["apple", "banana", "orange", "apple", "pineapple"];
 //x = fruits, y = be my string
 function allIndexOf(x,y) {
-
+    return x;
+    return y;
 }
-
-console.log(allIndexOf(fruits,''));
+console.log(allIndexOf(fruits,"apple"))
+console.log(allIndexOf("guava"))
 
 //
 // var bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
@@ -158,8 +159,8 @@ console.log(allIndexOf(fruits,''));
 // }
 // console.log(removeAll(bugs,'roach'))
 
-//:[ FUCK!!!
-for (let i = 10; i > 0; i--){
-    console.log(i);
-}
-console.log('Happy New Year!');
+//:[ FUCK!
+// for (let i = 10; i > 0; i--){
+//     console.log(i);
+// }
+
