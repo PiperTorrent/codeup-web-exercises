@@ -139,11 +139,12 @@ function makeObj(str){
 var fruits = ["apple", "banana", "orange", "apple", "pineapple"];
 //x = fruits, y = be my string
 function allIndexOf(x,y) {
-    return x;
-    return y;
+    for ( let x = 0; x < fruits.length; x++){
+        return x [3];
+    }
 }
 console.log(allIndexOf(fruits,"apple"))
-console.log(allIndexOf("guava"))
+console.log(allIndexOf(fruits,"guava"))
 
 //
 // var bugs = ["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"];
